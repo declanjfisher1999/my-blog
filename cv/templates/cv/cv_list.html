@@ -1,0 +1,10 @@
+{% extends 'cv/base.html' %}
+
+{% block content %}
+    <div class="cvPost">
+        <div class="date">
+            <p>published: {{ cvPost.0.published_date }}</p>
+        </div>
+        <p>{{ cvPost.0.education|linebreaksbr }}</p>
+    </div>
+{% endblock %}}
