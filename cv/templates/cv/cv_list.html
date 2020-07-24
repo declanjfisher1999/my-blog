@@ -5,6 +5,33 @@
         <div class="date">
             <p>published: {{ cvPost.0.published_date }}</p>
         </div>
-        <p>{{ cvPost.0.education|linebreaksbr }}</p>
+        <div class="profile">
+            <h3>Profile</h3>
+            <p>{{ cvPost.0.profile|linebreaksbr  }}</p>
+        </div>
+        <div class="employment">
+            <h3>Employment</h3>
+            <p>{{ cvPost.0.employment|linebreaksbr  }}</p>
+        </div>
+        <div class="education">
+            <h3>Education</h3>
+            <p>{{ cvPost.0.education|linebreaksbr  }}</p>
+        </div>
+        <div class="skills">
+            <h3>Skills</h3>
+            <p>{{ cvPost.0.skills|linebreaksbr  }}</p>
+        </div>
+        <div class="ecActivities">
+            <h3>Extra-Curricular Activities</h3>
+            <p>{{ cvPost.0.ecActivities|linebreaksbr  }}</p>
+        </div>
+        <div class="hobbies">
+            <h3>Hobbies</h3>
+            <p>{{ cvPost.0.hobbies|linebreaksbr  }}</p>
+        </div>
+        <div class="references">
+            <h3>References</h3>
+            <p>{{ cvPost.0.references }}</p>
+        </div>
     </div>
 {% endblock %}}
