@@ -1,9 +1,11 @@
 from django.test import TestCase
 from django.urls import resolve
-from blog.views import post_list
+from cv.views import cv_display
 
 # Create your tests here.
-class SmokeTest(TestCase):
-    def test_root_url_resolves_to_post_list_view(self):
-        found = resolve('/')
-        self.assertEquals(found.func, post_list)
+class CVPageTest(TestCase):
+    def test_cv_url_resolves_to_cv_display_view(self):
+        found = resolve('/cv')
+        self.assertEquals(found.func, cv_display)
+
+
