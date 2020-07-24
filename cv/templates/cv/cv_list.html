@@ -1,6 +1,10 @@
 {% extends 'cv/base.html' %}
 
 {% block content %}
+<a class="btn btn-default" href="{% url 'cv_edit' %}"><span class="glyphicon glyphicon-pencil"></span></a>
+    <h2>Declan Fisher</h2>
+    <h5>204 Hubert Road, Birmingham, B296ER, United Kingdom</h5>
+    <p>+44 7388 130016 - declan.j.fisher@gmail.com</p>
     <div class="cvPost">
         <div class="date">
             <p>published: {{ cvPost.0.published_date }}</p>
