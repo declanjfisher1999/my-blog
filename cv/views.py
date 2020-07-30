@@ -2,6 +2,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
 from .models import CVPost
 from .forms import CVForm
+from django.http import HttpResponse
 
 # Create your views here.
 def cv_list(request):
